@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Add Employee</title>
+</head>
+<body>
+<center><h2>Add Employee</h2></center>
+	<div style="width: 80%;margin: 0 auto;padding: 20px; background: lightblue;">
+	<div style="padding:40px;">
+		<form name="add_employee_form" method="post" action="EmployeeController">
+			<label for="empId">Employee ID:</label>
+			<input type="text" id="empId" name="empId"><br><br>
+			
+			<label for="empName">Employee Name:</label>
+			<input type="text" id="empName" name="empName"><br><br>
+			
+			<label >Gender:</label><br>
+			<input type="radio" id="male" name="gender" value="Male">
+			<label for="male">Male</label><br>
+			<input type="radio" id="female" name="gender" value="Female">
+			<label for="female">Female</label><br><br>
+			
+			<label for="dept">Department:</label>
+			<select id="dept" name="dept">
+				<option value="Accounts">Accounts</option>
+				<option value="Admin">Admin</option>
+				<option value="Marketing">Marketing</option>
+				<option value="Production">Production</option>
+				<option value="Sales">Sales</option>
+			</select><br><br>
+			
+			<label for="salary">Salary:</label>
+			<input type="text" id="salary" name="salary"><br><br>
+			
+			<input type="submit" name="action" value="Add Employee"><br><br>
+			<input type="reset" value="Reset">
+			
+		</form>
+	</div>
+	</div>
+	<a href="EmployeeController?action=home" style="padding:40px;">Home</a>
+</body>
+</html>

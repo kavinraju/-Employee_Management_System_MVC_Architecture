@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Employees Portal</title>
+</head>
+<body>
+	<center><h2>Employee Management System</h2></center>
+	
+	<center>
+	<div style="background: lightblue; width: 50%; padding:10px;">
+		<h3><a href="EmployeeController?action=add_employee">Add Employee</a></h3>
+		<h3><a href="EmployeeController?action=view_all_employees">View all Employees</a></h3>
+		<h3><a href="EmployeeController?action=search_employee">Search Employee</a></h3>
+		<h3><a href="EmployeeController?action=delete_employee">Delete Employee</a></h3>
+	</div>
+	</center>
+	
+	<center>
+	<div style="background: lightblue; width: 50%; padding:10px; margin-top: 10px;">
+	
+		<h3 align="left">View all Employees by</h3>
+		<form align="left"  name="sort_employees_form" method="post" action="EmployeeController">
+		<input type="radio" id="sort_by_name" name="sortby" value="name">
+		<label for="sort_by_name">Sort by name</label><br>
+	
+		<input type="radio" id="sort_by_salary" name="sortby" value="salary">
+		<label for="sort_by_salary">Sort by Salary</label><br><br>
+		
+		<input type="submit" name="action" value="Sort">
+		</form>
+		
+		<h3 align="left">View all Employees by</h3>
+		<form align="left"  name="list_employees_form_by_dept" method="post" action="EmployeeController" >
+		
+		<label for="dept">Department:</label>
+			<select id="dept" name="list_by_dept">
+				<option value="Accounts">Accounts</option>
+				<option value="Admin">Admin</option>
+				<option value="Marketing">Marketing</option>
+				<option value="Production">Production</option>
+				<option value="Sales">Sales</option>
+			</select><br><br>
+			
+			<input type="submit" name="action" value="List By Department">
+		
+		</form>
+	</div>
+	</center>
+</body>
+</html>
