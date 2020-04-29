@@ -1,4 +1,4 @@
-# Employee_Management_System_MVC_Architecture
+# Employee Management System MVC Architecture
 Created a dynamic web application to manage the details of employees. (Using MVC architecture)
 
 This project is created for Web Development with Java assignment, part of Open Elective course work in college.
